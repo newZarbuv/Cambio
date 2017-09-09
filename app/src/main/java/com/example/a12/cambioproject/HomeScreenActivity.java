@@ -1,5 +1,6 @@
 package com.example.a12.cambioproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.support.design.widget.FloatingActionButton;
@@ -19,22 +20,39 @@ public class HomeScreenActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+
+    }
+
+    protected void btnStart1Click(View v) {
+        Button btnBack = (Button) findViewById(R.id.btnStart1);
+        btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
-        Button btnExit=(Button)findViewById(R.id.exit);
-        btnExit.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-                System.exit(0);
+                Intent i = new Intent(getApplicationContext(), GameSettingActivity.class);
+                startActivity(i);
             }
         });
     }
 
+    protected void btnHowToClick(View v) {
+        Button btnBack = (Button) findViewById(R.id.btnHowTo);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), howToPlay.class);
+                startActivity(i);
+            }
+        });
+    }
+
+    protected void btnAboutClick(View v) {
+        Button btnBack = (Button) findViewById(R.id.btnAbout);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), aboutUs.class);
+                startActivity(i);
+            }
+        });
+    }
 }

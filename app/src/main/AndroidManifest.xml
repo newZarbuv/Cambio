@@ -28,6 +28,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.a12.cambioproject.HomeScreenActivity" />
         </activity>
+        <activity android:name=".aboutUs" />
+        <activity android:name=".howToPlay"></activity>
     </application>
 
 </manifest>

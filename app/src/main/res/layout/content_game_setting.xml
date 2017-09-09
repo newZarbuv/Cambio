@@ -8,4 +8,125 @@
     tools:context="com.example.a12.cambioproject.GameSettingActivity"
     tools:showIn="@layout/activity_game_setting">
 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
+        android:background="#DDDDDD"
+        android:gravity="center_vertical|left"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-103dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <SeekBar
+                    android:id="@+id/seekLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/linearLayout"
+
+                    android:layout_toEndOf="@+id/linearLayout"
+                    android:layout_toRightOf="@+id/linearLayout"
+                    android:max="5"
+                    android:min="3"
+
+                    />
+
+                <TextView
+                    android:id="@+id/txtLevelChoosed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/linearLayout"
+                    android:layout_toEndOf="@+id/linearLayout"
+                    android:layout_toRightOf="@+id/linearLayout"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/txtPlayersChoosed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/linearLayout"
+                    android:layout_toEndOf="@+id/linearLayout"
+                    android:layout_toRightOf="@+id/linearLayout"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtPlayersNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout"
+
+            android:text="Number of players:" />
+
+        <TextView
+            android:id="@+id/txtcambioLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:text="Cambio level:"
+ />
+
+        <SeekBar
+            android:id="@+id/seekPlayers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtPlayersNum"
+
+            android:layout_toEndOf="@+id/txtPlayersNum"
+            android:layout_toRightOf="@+id/txtPlayersNum"
+            android:max="4"
+            android:min="1" />
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/seekPlayers"
+            android:layout_alignRight="@+id/seekPlayers"
+            android:layout_below="@+id/seekPlayers"
+
+            android:text="Let's Cambio!" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnStart"
+            android:layout_alignBottom="@+id/btnStart"
+            android:onClick="btnBackClick"
+            android:layout_toEndOf="@+id/btnStart"
+            android:layout_toRightOf="@+id/btnStart"
+            android:text="back to main menu" />
+
+        <TextView
+            android:id="@+id/txtAvatar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="my Avatar:"
+
+            android:layout_below="@+id/seekPlayers"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="24dp" />
+
+    </RelativeLayout>
+
+
 </android.support.constraint.ConstraintLayout>
