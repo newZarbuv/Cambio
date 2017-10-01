@@ -3,4 +3,15 @@
     <string name="title_home">Alon Git Test</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    //home screen values
+    <string name="meantime_text">"afterwards there's gonna be ana animation here</string>
+    <string name="btnSettingsText">play!</string>
+    <string name="btnHowToText">how to play?</string>
+    <string name="btnAboutUsText">About Us</string>
+    <string name="title_activity_game_settings">gameSettings</string>
+    // game settings values
+    <string name="txtNumOf">number of players:</string>
+    <string name="txtCambioLevel">Cambio Level:</string>
+    <string name="txtAvatar">choose an avatar!</string>
+
 </resources>

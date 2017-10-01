@@ -8,12 +8,14 @@ import java.util.List;
 
 public class HumanPlayer extends APlayer {
     @Override
-    public void play(Card card) {
+    public void play(CambioCard card) {
         GameLocalManager.getPlayerCards(this._name);
 
 
 
     }
+
+
 
 
     @Override

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+<RelativeLayout
+
+    android:id="@+id/settingsLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:layout_weight="1"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNum"
+        android:text="@string/txtNumOf"/>
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtNum"
+        android:id="@+id/seekNum"
+        android:min="3"
+        android:max="5"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtShowNum"
+        android:layout_toRightOf="@id/seekNum"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNum"
+        android:id="@+id/txtLevel"
+        android:text="@string/txtCambioLevel"/>
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/txtLevel"
+        android:layout_below="@id/seekNum"
+        android:id="@+id/seekLevel"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/seekLevel"
+        android:layout_below="@id/seekNum"
+        android:id="@+id/txtShowLevel"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLevel"
+        android:id="@+id/btnAvatar"
+        android:text="@string/txtAvatar"/>
+
+
+</RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_weight="0.6"
+        android:id="@+id/settingsLayout2"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="bottom|center"
+               >
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:text="@string/btnSettingsText"
+            android:textAlignment="center"/>
+
+
+
+</RelativeLayout>
+
+</LinearLayout>
