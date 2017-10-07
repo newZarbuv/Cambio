@@ -33,15 +33,11 @@ public class HomeScreenActivity extends AppCompatActivity {
     }
 
 
-  //  protected void aboutUsButtonClick(){
-    //    Button btnAbout=(Button) findViewById(R.id.aboutUsButton);
-      //  btnAbout.setOnClickListener(new View.OnClickListener() {
-        //    @Override
-          //  public void onClick(View v) {
-            //    Intent i=new Intent(HomeScreenActivity.this,aboutUsActivity.class);
-              //  startActivity(i);
-            //}
-      //  });
-    //}
+    public void aboutUsButtonClick(View view){
+                Intent i=new Intent(HomeScreenActivity.this,aboutUsActivity.class);
+                startActivity(i);
+    }
+
+
 
 }
