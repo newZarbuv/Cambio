@@ -17,52 +17,53 @@ public class gameSettings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_game_settings);
-        initializeVariables();
-        txtPlayers.setText( seekPlayers.getProgress());
-        txtLevel.setText(seekLevel.getProgress());
-
-        seekLevel.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            int progress = 0;
-
-
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                progress=i;
-
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-                txtLevel.setText(seekLevel.getProgress());
-            }
-        });
-
-        seekPlayers.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            int progress = 0;
-
-
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                progress=i;
-
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-                txtPlayers.setText(seekLevel.getProgress());
-            }
-        });
     }
+      //  initializeVariables();
+     //   txtPlayers.setText( seekPlayers.getProgress());
+     //   txtLevel.setText(seekLevel.getProgress());
+
+    //    seekLevel.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+     //       int progress = 0;
+
+
+     //       @Override
+     //       public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+      //          progress=i;
+
+
+
+       //     @Override
+       //     public void onStartTrackingTouch(SeekBar seekBar) {
+
+       //     }
+
+        //    @Override
+       //     public void onStopTrackingTouch(SeekBar seekBar) {
+       //         txtLevel.setText(seekLevel.getProgress());
+      //      }
+     //   });
+
+      //  seekPlayers.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+     //       int progress = 0;
+
+
+      //      @Override
+     //       public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
+      //          progress=i;
+
+      //      }
+
+      //      @Override
+      //      public void onStartTrackingTouch(SeekBar seekBar) {
+
+       //     }
+
+       //     @Override
+       //     public void onStopTrackingTouch(SeekBar seekBar) {
+       //         txtPlayers.setText(seekLevel.getProgress());
+     //       }
+      //  });
+  //  }
 
 
     private void initializeVariables(){

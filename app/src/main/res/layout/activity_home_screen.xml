@@ -27,7 +27,7 @@
     android:gravity="bottom"
     android:text="@string/btnSettingsText"
     android:textAlignment="center"
-    android:onClick="settingsButtonClick"/>
+    android:onClick="btnPlayClicked" />
     <Button
         android:id="@+id/howToButton"
         android:layout_width="wrap_content"
@@ -41,6 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/howToButton"
         android:text="@string/btnAboutUsText"
-        android:id="@+id/aboutUsButton"/>
+        android:id="@+id/aboutUsButton"
+        android:onClick="aboutUsButtonClick"/>
 </RelativeLayout>
 </RelativeLayout>
