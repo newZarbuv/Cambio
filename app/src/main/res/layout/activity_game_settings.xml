@@ -6,68 +6,74 @@
     android:orientation="vertical"
     android:baselineAligned="false">
 <RelativeLayout
-
     android:id="@+id/settingsLayout1"
-    android:layout_width="fill_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:gravity="bottom"
-    android:layout_weight="1"
-    >
+    android:gravity="bottom|center_horizontal"
+    android:layout_weight="1">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txtNum"
-        android:text="@string/txtNumOf"/>
-    <SeekBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/txtNum"
-        android:id="@+id/seekNum"
-        android:progress="2"
-
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/txtShowNum"
-        android:layout_toRightOf="@id/seekNum"/>
-    <TextView
-        android:layout_width="wrap_content"
+        android:textSize="20dp"
+        android:text="@string/txtNumOf"
+        android:layout_centerHorizontal="true"
+        android:includeFontPadding="false"/>
+    <NumberPicker
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/txtNum"
-        android:id="@+id/txtLevel"
-        android:text="@string/txtCambioLevel"/>
-    <SeekBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/txtLevel"
-        android:layout_below="@id/seekNum"
-        android:id="@+id/seekLevel"
-        android:progress="3"
-
-        />
+        android:layout_centerHorizontal="true"
+        android:id="@+id/numPicPlayers"
+        ></NumberPicker>
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="bottom|center_horizontal"
+    android:layout_weight="1"
+    android:id="@+id/settingsLayout3">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/seekLevel"
-        android:layout_below="@id/seekNum"
-        android:id="@+id/txtShowLevel"/>
+        android:paddingTop="@dimen/fab_margin"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtLevel"
+        android:textSize="20dp"
+        android:includeFontPadding="false"
+        android:text="@string/txtCambioLevel"/>
+
     <NumberPicker
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/txtShowLevel"
-        android:id="@+id/numPicLevel"></NumberPicker>
+        android:id="@+id/numPicLevel"
+
+        android:layout_below="@id/txtLevel"
+        android:layout_centerHorizontal="true"
+       >
+       </NumberPicker>
+</RelativeLayout>
+
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/settingsLayout4"
+    android:gravity="bottom|center_horizontal"
+    android:layout_weight="1">
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txtLevel"
         android:id="@+id/btnAvatar"
+        android:gravity="center"
         android:text="@string/txtAvatar"/>
-
-
 </RelativeLayout>
+
+
+
+
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_weight="0.6"
+        android:layout_weight="1"
         android:id="@+id/settingsLayout2"
         android:layout_height="wrap_content"
         android:layout_width="fill_parent"
