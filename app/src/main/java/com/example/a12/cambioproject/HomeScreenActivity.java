@@ -19,14 +19,14 @@ public class HomeScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
-        Log.d("ronLog","entered on create");
+
 
     }
 
 
 
     public void btnPlayClicked(View view) {
-        Log.d("ronLog","Btton clicked");
+
         Intent i= new Intent(HomeScreenActivity.this,gameSettings.class);
         startActivity(i);
 

@@ -1,7 +1,9 @@
 package com.example.a12.cambioproject;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.NumberPicker;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -29,7 +31,15 @@ public class gameSettings extends AppCompatActivity {
         nPlayers.setMinValue(PLAYERS_MIN_VALUE);
         nPlayers.setMaxValue(PLAYERS_MAX_VALUE);
 
+    }
 
+    public void playButtonClick(View view){
+        NumberPicker nLevel=(NumberPicker)findViewById(R.id.numPicLevel);
+        NumberPicker nPlayers=(NumberPicker)findViewById(R.id.numPicPlayers);
+        Intent i=new Intent(gameSettings.this,gameActivity.class);
+        i.putExtra("CAMBIO_LEVEL",nLevel.getValue());
+        i.putExtra("PLAYERS",nPlayers.getValue());
+        startActivity(i);
     }
 
 
