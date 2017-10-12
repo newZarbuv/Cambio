@@ -1,13 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.a12.cambioproject.aboutUsActivity">
+    android:orientation="vertical"
+    android:baselineAligned="false">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:id="@+id/aboutLayout1"
+    android:gravity="top|center_horizontal"
+    android:layout_weight="0.2">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="its gonna be amazing!!"/>
-</android.support.constraint.ConstraintLayout>
+        android:text="@string/txtAbout"/>
+</RelativeLayout>
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="top|start">
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/txtSub"
+           android:text="@string/txtSub"/>
+       <EditText
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+          />
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="top|start">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtBody"
+            android:text="@string/txtBody"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:scrollbars="vertical"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+

@@ -15,4 +15,12 @@
     <string name="txtCambioLevel">Cambio Level:</string>
     <string name="txtAvatar">choose an avatar!</string>
 
+    //about us values
+    <string name="txtAbout">We are couple of childhood friends who admire the cambio game and
+    passionate about programming. We live at the state of Israel. We look forward to develop this game and
+        to distribute it as much as we can. If you encounter in a bug or you have a proposal to improve the game,
+        please contact us:
+</string>
+    <string name="txtSub">Subject:</string>
+    <string name="txtBody">Message:</string>
 </resources>
